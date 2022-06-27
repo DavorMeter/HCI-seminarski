@@ -1,10 +1,10 @@
-/*import * as React from "react"
-import { Link } from "gatsby"*/
+import * as React from "react"
+import { Link } from "gatsby"
 
-/*import Layout from "../components/layout"
-import Seo from "../components/seo"*/
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-/*const UsingDSG = () => (
+const UsingDSG = () => (
   <Layout>
     <Seo title="Using DSG" />
     <h1>
@@ -22,4 +22,4 @@ import Seo from "../components/seo"*/
   </Layout>
 )
 
-export default UsingDSG*/
+export default UsingDSG
