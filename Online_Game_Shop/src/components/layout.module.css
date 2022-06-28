@@ -2,34 +2,44 @@
     display: flex;
     font-family: sans-serif;
     justify-content: stretch;
-    flex-grow: 1;
+    flex-direction: column;
+    flex: 1;
     padding: 0;
     margin-top: 50px;
     margin-right: 0px;
     margin-left : 0px;
     margin-bottom: 0px;
+    width:100%;
 }
-
-.heading {
-    color: rebeccapurple;
+.heading{
+    color: black;
+}
+.logo {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    font: bold;
+}
+.search{
+    color: white;
+    font-size: 35px;
 }
 .navBar {
     display: flex;
     justify-content: space-between;
     position: fixed;
-    flex: 100%;
+    width: 100%;
     top: 0;
     background-color: black;
 }
-.navBarItems
+.navBarItems 
 {
     display: flex;
     flex-direction: row;
-    margin-left: 10px;
-    margin-right: 10px;
 }
-.nav-link-item {
-    padding-right: 0;
+
+.nav-link-item :not(last-child){
+    padding-right: 20px;
 }
 .nav-link-text {
     color: white;

@@ -3,6 +3,8 @@ import { Link } from 'gatsby'
 import {
   container,
   heading,
+  logo,
+  search,
   navBar,
   navBarItems,
   navLinkItem,
@@ -14,6 +16,11 @@ const Layout = ({ pageTitle, children }) => {
       <div>
         <title>{pageTitle}</title>
         <nav className={navBar}>
+          <ul>
+          <Link to="/" className={logo}>
+                OnlineGameShop
+              </Link>
+          </ul>
           <ul className={navBarItems}>
             <li className={navLinkItem}>
               <Link to="/" className={navLinkText}>
@@ -41,6 +48,7 @@ const Layout = ({ pageTitle, children }) => {
               </Link>
             </li>
           </ul>
+          <ul className={search}>SEARCH</ul>
         </nav>
         <main>
           <h1 className={heading}>{pageTitle}</h1>
