@@ -1,10 +1,10 @@
-import * as React from 'react'
-import Layout from '../components/layout'
-const IndexPage = () => {
-  return (
-    <Layout pageTitle="Home Page">
-      <p>I'm making this by following the Gatsby Tutorial.</p>
-    </Layout>
-  )
-}
+import React from "react"
+
+import NavigationHeader from "../components/NavigationHeader"
+const IndexPage = () => (
+  <main>
+    <NavigationHeader/>
+  </main>
+)
+
 export default IndexPage

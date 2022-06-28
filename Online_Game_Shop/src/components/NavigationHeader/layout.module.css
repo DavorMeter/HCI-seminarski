@@ -1,0 +1,45 @@
+.container {
+    background-color: #000000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+  
+.container span {
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    font-family: 'Helvetica';
+}
+
+.logo
+{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    font-family: 'Helvetica';
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.search
+{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    font-family: 'Helvetica';
+    padding-right: 10px;
+}
+
+.navLinkItems {
+    display: flex;
+    flex-direction: row;
+}
+
+.navLinkText
+{
+    padding-right: 20px;
+}
