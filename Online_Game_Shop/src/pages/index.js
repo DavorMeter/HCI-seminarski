@@ -3,7 +3,7 @@ import React from "react"
 import NavigationHeader from "../components/NavigationHeader"
 const IndexPage = () => (
   <main>
-    <NavigationHeader/>
+    <NavigationHeader activeTab = "SUPPORT"/>
   </main>
 )
 

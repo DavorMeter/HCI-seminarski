@@ -7,10 +7,10 @@ import {
     navigationHeader,
 } from './layout.module.css'
 
-const NavigationHeader = () => (
+const NavigationHeader = ({activeTab}) => (
   <section className={navigationHeader}>
     <Logo/>
-    <NavigationBar/>
+    <NavigationBar activeTab={activeTab}/>
     <SearchBox/>
   </section>
 )

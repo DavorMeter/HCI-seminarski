@@ -6,10 +6,10 @@ import {
 } from './layout.module.css'
 
 const navTabs = ['HOME','STORE','ABOUT','SUPPORT','LOGIN']
-const NavigationBar = () =>
+const NavigationBar = ({activeTab}) =>
 <nav className={navigationBar}>
     {navTabs.map(tab => {
-      if (tab === 'HOME')
+      if (tab === activeTab)
       return (
         <li className={active}>
           {tab}
