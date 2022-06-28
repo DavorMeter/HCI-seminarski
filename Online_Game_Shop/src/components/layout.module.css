@@ -19,14 +19,17 @@
     font-size: 35px;
     text-decoration: none;
     font: bold;
+    padding-right: 20px;
 }
 .search{
     color: white;
     font-size: 35px;
 }
 .navBar {
+    height: 70px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
