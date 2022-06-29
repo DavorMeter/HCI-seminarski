@@ -1,12 +1,13 @@
 import React from "react"
-import Footer from "../components/Footer"
+import HomePage from "../components/HomePage"
+import HeaderFooterLayout from "../layouts/headerFooter"
+import HadesImage from "../images/HadesImage"
+import SeriousSamImage from "../images/SeriousSamImage"
+import X4Image from "../images/X4Image"
 
-import NavigationHeader from "../components/NavigationHeader"
 const IndexPage = () => (
-  <main>
-    <NavigationHeader activeTab = "SUPPORT"/>
-    <Footer/>
-  </main>
+  <HeaderFooterLayout activeTab='HOME'>
+    <HomePage hades_image={<HadesImage/>} serious_sam_image={<SeriousSamImage/>} x4_image={<X4Image/>} />
+  </HeaderFooterLayout>
 )
-
 export default IndexPage
