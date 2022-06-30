@@ -65,6 +65,7 @@
 .serious_sam_info { grid-area: serious_sam_info;
   display: flex;
   flex-direction: row;
+  height: 90px;
   align-items: center;
   justify-content: space-between;
   background-color: #406B9D;
@@ -142,12 +143,12 @@
 }
 .dvijeIgre {
   display: grid; 
-  grid-template-columns: 1fr; 
+  grid-template-columns: 345px; 
   grid-template-rows: 1fr 1fr; 
   gap: 10px 0px; 
   grid-template-areas: 
     "x4_place"
-    "igra3"; 
+    "nfs_place";
   grid-area: dvije-igre;
 }
 .x4_place { grid-area: x4_place;
@@ -160,7 +161,6 @@
 }
 
 .x4_picture { grid-area: x4_picture;
-  height: 161px;
 }
 .x4_info { grid-area: x4_info;
   display: flex;
@@ -187,6 +187,7 @@
   height: 50px;
   margin-right: 10px;
   background-color: grey;
+  justify-content: center;
 }
 .full_price
 {
@@ -194,12 +195,38 @@
   color: white;
   font-size: 25px;
   font-weight: bold;
-  justify-items: center;
   align-items: center;
-  margin: 5px;
 }
 
-.igra3 {
-  grid-area: igra3;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+.nfs_place {
+  grid-area: nfs_place;
+  display: grid;
+  grid-template-columns: 345px; 
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "nfs_picture"
+    "nfs_info"; 
+}
+
+.nfs_picture {
+  grid-area: nfs_picture;
+}
+
+.nfs_info {
+  grid-area: nfs_info;
+  display: flex;
+  height: 80px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #406B9D;
+}
+
+.nfs_text
+{
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-left: 20px;
+  font-weight: bold;
 }

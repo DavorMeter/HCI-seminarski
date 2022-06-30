@@ -3,14 +3,14 @@ import { useStaticQuery, graphql } from "gatsby"
 import {GatsbyImage} from "gatsby-plugin-image"
 import {fill} from './layout.module.css'
 
-const SeriousSamImage = () => {
+const NFSImage = () => {
    const data = useStaticQuery(graphql`
    query {
-     myImage: file(relativePath: { eq: "Serious_Sam_home_page.jpg" }) {
+     myImage: file(relativePath: { eq: "Need-For-Speed-home_page.jpg" }) {
        childImageSharp {
          gatsbyImageData(layout: CONSTRAINED
-          height:480
-          width: 345
+          width:345
+          height:200
             )
        }
      }
@@ -19,4 +19,4 @@ const SeriousSamImage = () => {
  return <div className={fill}><GatsbyImage image={data.myImage.childImageSharp.gatsbyImageData}/></div>
 }
 
-export default SeriousSamImage
+export default NFSImage

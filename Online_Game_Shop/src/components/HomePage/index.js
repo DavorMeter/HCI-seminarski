@@ -17,7 +17,10 @@ import{
     x4_info,
     x4_picture,
     x4_text,
-    igra3,
+    nfs_place,
+    nfs_info,
+    nfs_picture,
+    nfs_text,
     percent_off_box,
     prices_box,
     old_price,
@@ -26,7 +29,7 @@ import{
     full_price
 } from './layout.module.css'
 
-const HomePage = ({hades_image,serious_sam_image,x4_image}) => (
+const HomePage = ({hades_image,serious_sam_image,x4_image,nfs_image}) => (
     <div className={container}>
         <div className={hades_place}>
             <div className={hades_picture}>
@@ -91,7 +94,21 @@ const HomePage = ({hades_image,serious_sam_image,x4_image}) => (
                         </div>
                     </div>
                 </div>
-                <div className={igra3}></div>
+                <div className={nfs_place}>
+                    <div className={nfs_picture}>
+                        {nfs_image}
+                    </div>
+                    <div className={nfs_info}>
+                        <div className={nfs_text}>
+                            Need For Speed
+                        </div>
+                        <div className={full_price_box}>
+                            <div className={full_price}>
+                                9.99&euro;
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

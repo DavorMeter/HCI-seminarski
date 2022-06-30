@@ -8,13 +8,16 @@ const X4Image = () => {
    query {
      myImage: file(relativePath: { eq: "X4_Foundations_home_page.jpg" }) {
        childImageSharp {
-         gatsbyImageData(layout: CONSTRAINED
-            )
+          gatsbyImageData(
+            layout: CONSTRAINED
+            width: 345
+            height: 200
+          )
        }
      }
    }
  `)
- return <div className={fill}><GatsbyImage image={data.myImage.childImageSharp.gatsbyImageData}/></div>
+ return <div  className={fill}><GatsbyImage image={data.myImage.childImageSharp.gatsbyImageData}/></div>
 }
 
 export default X4Image
