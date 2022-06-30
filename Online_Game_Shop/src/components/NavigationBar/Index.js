@@ -1,23 +1,29 @@
+import { Link } from 'gatsby'
 import React from 'react'
-
+import { navs } from '../../constansts/const'
 import {
     navigationBar,
     active
 } from './layout.module.css'
 
-const navTabs = ['HOME','STORE','ABOUT','SUPPORT','LOGIN']
-const NavigationBar = ({activeTab}) =>
-<nav className={navigationBar}>
-    {navTabs.map(tab => {
-      if (tab === activeTab)
-      return (
-        <li className={active}>
-          {tab}
-        </li>)
-      else
-        return <li>{tab}</li>
+const NavigationBar = ({activeTab}) => (
+  <nav className={navigationBar}>
+      {navs.map(({tab,to}) => {
+        if (tab === activeTab)
+        return (
+          <Link to = {to}>
+            <li className={active}>
+              {tab}
+            </li>
+          </Link>)
+        else
+          return (
+            <Link to = {to}>
+              <li>{tab}</li>
+            </Link>
+          )
       }
-    )}
-</nav>
-
+      )}
+  </nav>
+)
 export default NavigationBar

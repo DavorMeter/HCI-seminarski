@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import {
     logo,
@@ -6,7 +7,9 @@ import {
 
 const Logo = () => (
   <section className={logo}>
-    <span className={logoText}>OnlineGameShop</span>
+    <span className={logoText}>
+      <Link to='/'>OnlineGameShop</Link>
+    </span>
   </section>
 )
 
