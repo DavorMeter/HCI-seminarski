@@ -1,0 +1,30 @@
+.full_pricebox
+{
+    color: white;
+    font-size: 30px;
+}
+
+.discount_pricebox
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "discount_off_text"
+    "discount_number_text";
+}
+
+.discount_off_text
+{
+    grid-area: discount_off_text;
+    background-color: darkgreen;
+    color: white;
+    font-size: 30px
+}
+
+.discount_number_text
+{
+    grid-area: discount_number_text;
+    color: white;
+    font-size: 25px
+}
